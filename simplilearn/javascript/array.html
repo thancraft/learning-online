@@ -36,7 +36,14 @@
     let last2 = cars[cars.length - 1]; //mengambil elemen paling akhir
     console.log(last2); //menampilkannya di console log/console
 
+
 //menambah elemen baru ke paling akhir dari sebuah array
  //add a new element at the end of array
     cars.push("audi");
+    document.getElementById("array").innerHTML = cars;
+
+
+//menghapus elemen paling awal dari sebuah array
+ //shift(): remove the first element from an array
+    cars.shift(); //menghapus elemen awal
     document.getElementById("array").innerHTML = cars;
