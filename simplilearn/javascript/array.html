@@ -5,3 +5,10 @@
         // mengambil elemen dari sebuah array dan memasukkannya ke variable bmw
         let bmw = cars[0]; //urutan elemen pada array dimulai dari 0, 1, 2, ...
         document.getElementById("array").innerHTML = bmw;  //menampilkan variable bmw kedalaman element id "array" pada html
+
+//properti yang menampilkan jumlahnya elemen dalam suatu array
+        let len = cars.length; //menampilkan banyaknya elemen pada sebuah array
+        document.getElementById("array").innerHTML = len; 
+
+        let last = cars[cars.length - 1]; //menampilkan elemen yang paling akhir dari sebuah array
+        document.getElementById("array").innerHTML = last; 
