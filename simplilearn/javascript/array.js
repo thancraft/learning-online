@@ -47,3 +47,52 @@
  //shift(): remove the first element from an array
     cars.shift(); //menghapus elemen awal
     document.getElementById("array").innerHTML = cars;
+
+
+    //unshift(): Add an element at the beginning of an array
+    cars.unshift("hyundai");
+    document.getElementById("array").innerHTML = cars;
+
+
+    //concat() : Create a new array by merging existing arrays
+    let bikes = ["yamaha", "suzuki", "royal enfield"];
+    let vehicles = cars.concat(bikes);
+    document.getElementById("array").innerHTML = vehicles;
+
+
+    //sort() : Sort an array in ascending order
+    vehicles.sort();
+    document.getElementById("array").innerHTML = vehicles;
+
+
+    //reverse() : Reverse the elements of an array
+    vehicles.reverse();
+    document.getElementById("array").innerHTML = vehicles;
+
+
+    //array.map()
+     // The map() method creates a new array and performs a function on each array element
+    let num1 = [2, 3, 4, 5, 6, 7];
+    let num2 = num1.map(multiply);
+    function multiply(value){
+        return value *2; 
+    }
+    document.getElementById("array").innerHTML = num2;
+
+
+    //array.filter()
+     //The filter() method takes each element in an array and it applies a conditional statement against it
+    let num3 = num1.filter(comp);
+    function comp(value){
+        return value>4;
+    }
+    document.getElementById("array").innerHTML = num3;
+
+
+    //array.reduce()
+     //The reduce() method reduces an array of values down to just one value using a function
+    let num4 = num1.reduce(sum);
+    function sum(total, value){
+        return total+value;
+    }
+    document.getElementById("array").innerHTML = num4;
