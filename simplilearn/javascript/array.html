@@ -21,4 +21,14 @@
                 console.log(item,index); //menampilkan elemen dari array ke sebuah console log
             });
 
+// mengubah sebuah array menjadi string menggunakan function (toString)
+ //toString(): convert an array into string
+        document.getElementById("array").innerHTML = cars.toString(); //mengubah array menjadi string dan menampilkannya di html   
 
+
+//mengubah elemen terakhir dari sebuah array
+ //remove the last element from an array
+    let last1 = cars.pop(); //menghapus elemen terakhir
+    document.getElementById("array").innerHTML = last1; //menampilkan sebuah perubahaan di html
+    let last2 = cars[cars.length - 1]; //mengambil elemen paling akhir
+    console.log(last2); //menampilkannya di console log/console
